@@ -20,7 +20,6 @@ OR
 ``  
 
 4. Run the training script.  
-
 ``
 python train_chemgcn.py
 ``
