@@ -39,7 +39,7 @@ class ConvolutionLayer(nn.Module):
         n_neighbors = adj_mat.sum(dim=-1, keepdims=True)
         # Create identity tensor
         self.idx_mat = torch.eye(
-            adj_mat.shape[-2], adj_mat.shape[-1], device=n_neighbors.get_device()
+            adj_mat.shape[-2], adj_mat.shape[-1], device=n_neighbors.device
         )
         # Add new (batch) dimension and expand
         idx_mat = self.idx_mat.unsqueeze(0).expand(*adj_mat.shape)
