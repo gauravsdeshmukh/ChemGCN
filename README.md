@@ -10,7 +10,7 @@ To get started, follow the steps below:
     conda env create --name chem_gcn --file environment_gpu.yml
 ``  
 OR  
-``  
+``
     conda env create --name chem_gcn --file environment_cpu.yml
 ``  
 
