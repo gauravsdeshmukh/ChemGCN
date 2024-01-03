@@ -218,8 +218,8 @@ def collate_graph_dataset(dataset: Dataset):
     Returns
     -------
     node_mats_tensor, adj_mats_tensor : tuple of two torch.Tensor objects
-        Node matrices with dimensions (batch_size, max_atoms, node_vec_len) and
-        adjacency matrices with dimensions (batch_size, max_atoms, max_atoms)
+        Node matrices with dimensions (batch_size * max_atoms, node_vec_len) and
+        adjacency matrices with dimensions (batch_size * max_atoms, max_atoms)
     outputs_tensor : torch.Tensor with dimensions (batch_size, n_outputs)
         Tensor containing outputs.
     smiles : list
